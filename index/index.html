@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zarpados RP - Tienda Oficial</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #1a0000, #4d0000);
+      color: white;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff4d4d;
+    }
+    .hero {
+      text-align: center;
+      padding: 150px 20px 100px;
+      background-image: url('https://cdn.wallpapersafari.com/9/38/SHDjgT.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #ff4d4d;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .btn {
+      background-color: #ff1a1a;
+      color: white;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #cc0000;
+    }
+    .btn-discord {
+      background-color: #23272A;
+      border: 2px solid #7289DA;
+    }
+    .productos {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding: 3rem;
+      margin-top: 3rem;
+    }
+    .producto {
+      background-color: #2b0000;
+      padding: 2rem;
+      border-radius: 15px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 0 10px #a60000;
+    }
+    .producto h2 {
+      color: #ff4d4d;
+    }
+    .producto button {
+      margin-top: 1rem;
+      background-color: #ff1a1a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 4rem 2rem;
+      background-color: #1a0000;
+    }
+    .benefit {
+      background-color: #300000;
+      padding: 2rem;
+      border-radius: 12px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 0 15px #990000;
+    }
+    .benefit i {
+      font-size: 2.5rem;
+      color: #ff4d4d;
+      margin-bottom: 1rem;
+    }
+    .benefit h3 {
+      color: #ff4d4d;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1a0000;
+      color: #ccc;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="zarpados.png" alt="Logo Zarpados RP" />
+      <h2>Zarpados RP</h2>
+    </div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Normativas</a>
+      <a href="#">Tienda</a>
+      <a href="#">Discord</a>
+      <a href="#">Iniciar Sesión</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>MEJOR SERVER DE ROL DE TODA LATINOAMÉRICA</h1>
+    <p>Viví la experiencia Zarpados RP</p>
+    <div class="hero-buttons">
+      <button class="btn">Ingresar al Servidor</button>
+      <button class="btn btn-discord"><i class="fab fa-discord"></i> Discord</button>
+    </div>
+  </section>
+
+  <section class="productos">
+    <div class="producto">
+      <h2>Rango VIP</h2>
+      <p>$5000</p>
+      <button onclick="window.location.href='AQUI_TU_LINK_DE_MERCADOPAGO'">Pagar con Mercado Pago</button>
+    </div>
+    <div class="producto">
+      <h2>Pack Starter</h2>
+      <p>$2500</p>
+      <button onclick="window.location.href='AQUI_TU_LINK_DE_MERCADOPAGO'">Pagar con Mercado Pago</button>
+    </div>
+    <div class="producto">
+      <h2>Rango Platino</h2>
+      <p>$8000</p>
+      <button onclick="window.location.href='AQUI_TU_LINK_DE_MERCADOPAGO'">Pagar con Mercado Pago</button>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div class="benefit">
+      <i class="fas fa-bolt"></i>
+      <h3>Optimización</h3>
+      <p>El servidor funciona suave y sin lag para todos los jugadores.</p>
+    </div>
+    <div class="benefit">
+      <i class="fas fa-user-shield"></i>
+      <h3>Staff Activo</h3>
+      <p>Moderación constante y resolución rápida de conflictos.</p>
+    </div>
+    <div class="benefit">
+      <i class="fas fa-users"></i>
+      <h3>Comunidad Activa</h3>
+      <p>Siempre hay gente roleando y eventos nuevos cada semana.</p>
+    </div>
+    <div class="benefit">
+      <i class="fas fa-heart"></i>
+      <h3>Buena Onda</h3>
+      <p>Ambiente sano y buena vibra para que todos disfruten.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Zarpados RP - Todos los derechos reservados.
+  </footer>
+</body>
+</html>
